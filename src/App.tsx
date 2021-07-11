@@ -42,7 +42,7 @@ function App() {
         dispatch(getForecastApi(tlvDefaultLocation));
       }
     );
-  }, []);
+  });
 
   return (
     <ThemeProvider theme={!theme ? lightTheme: darkTheme}>

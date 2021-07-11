@@ -1,3 +1,4 @@
+import { debounce } from '@material-ui/core';
 import { useSelector, useDispatch } from 'react-redux';
 import { Location } from '../../../interfaces/Location';
 import { State } from '../../../interfaces/State';
@@ -8,7 +9,7 @@ const useSearch = () => {
   const dispatch = useDispatch();
 
   const handleChange = async (e:any) => {
-    dispatch(getLocationApi(e.target.value));
+    debounce(dispatch(getLocationApi(e.target.value)), 500);
   };
 
   const handleSelected = (place:Location) => {
