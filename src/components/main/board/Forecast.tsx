@@ -49,7 +49,7 @@ function Forecast({ current }: {current: Current}) {
                 <Text weight="500">
                   Min: {dailyForcast.Temperature.Minimum.Value}
                   {dailyForcast.Temperature.Minimum.Unit} 
-                  
+                  &nbsp;
                   Max: {dailyForcast.Temperature.Maximum.Value}
                   {dailyForcast.Temperature.Maximum.Unit}
                 </Text>

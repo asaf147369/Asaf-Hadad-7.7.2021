@@ -18,7 +18,7 @@ export const Header = ({ setTheme } : { setTheme:React.Dispatch<React.SetStateAc
     >
 
       <Title level="1" margin="0 20px 0 0">
-        Weather App
+        Weather APP
       </Title>
           <Nav />
         <Col alignItems="center" className={Styles.switch}>

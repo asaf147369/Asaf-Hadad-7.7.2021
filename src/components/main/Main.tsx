@@ -10,10 +10,7 @@ import { State } from '../../interfaces/State';
 import { Text } from '../common/text/Text';
 
 const Main = () => {
-  const { current, loading, error, favorites } = useSelector((state:State) => {
-    console.log(state);
-    return state
-  });
+  const { current, loading, error, favorites } = useSelector((state:State) => state);
 
   return (
     <React.Fragment>
