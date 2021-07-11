@@ -10,6 +10,7 @@ const useStyles = makeStyles(() => ({
     bottom: '50px',
     left: '50%',
     transform: 'translateX(-50%)',
+    display: 'none'
   },
 }));
 
@@ -47,6 +48,7 @@ export default function SimpleAlerts({ error }:{error:string}) {
         opacity: visible ? '1' : '0',
         transition: '0.3s ease',
         transform: visible ? 'translateY(0)' : 'translateY(100px)',
+        display: visible ? "block": "none"
       }}
     >
       <Alert severity="error">{error}</Alert>

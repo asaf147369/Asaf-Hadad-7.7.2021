@@ -38,8 +38,7 @@ const Head = ({ current, favorites } : {current:Current, favorites?: Fav[]}) => 
           </Title>
           <Text>
             {current.weather.Temperature.Metric.Value}
-            {current.weather.Temperature.Metric.Unit} {current.weather.Temperature.Imperial.Value}
-            {current.weather.Temperature.Imperial.Unit}
+            {current.weather.Temperature.Metric.Unit}
           </Text>
         </Col>
         <Col flex="10%" justify="flex-end" alignItems="center">

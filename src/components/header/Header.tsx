@@ -7,7 +7,7 @@ import { BsSun, BsMoon } from 'react-icons/bs';
 import { Title } from '../common/text/Title';
 import Styles from './header.module.scss';
 
-export const Header = ({ setTheme } : { setTheme:React.Dispatch<React.SetStateAction<boolean>> }) => {
+export const Header = ({ setTheme } : { setTheme: React.Dispatch<React.SetStateAction<boolean>> }) => {
   return (
     <Container
       justify="space-between"
@@ -20,7 +20,7 @@ export const Header = ({ setTheme } : { setTheme:React.Dispatch<React.SetStateAc
       <Title level="1" margin="0 20px 0 0">
         Weather APP
       </Title>
-          <Nav />
+        <Nav />
         <Col alignItems="center" className={Styles.switch}>
           <BsSun size="36px" color="orange" />
           <Switch
@@ -30,7 +30,6 @@ export const Header = ({ setTheme } : { setTheme:React.Dispatch<React.SetStateAc
           />
           <BsMoon size="36px" color="#91A3B0" />
       </Col>
-
     </Container>
   );
 };

@@ -51,7 +51,7 @@ export const weatherSlice = createSlice({
     },
     changeCurrent: (state:State, { payload }: {payload: Current}) => {
       state.current = payload;
-    },
+    }
   },
   extraReducers: {
     [getLocationApi.pending.toString()]: (state:State) => {
