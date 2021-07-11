@@ -27,11 +27,12 @@ function Forecast({ current }: {current: Current}) {
                 dir="column"
                 justify="center"
                 alignItems="center"
-                width="250px"
+                width="15%"
                 radius="8px"
                 border="1px solid var(--themeColor)"
                 padding="25px"
-                margin="30px"
+                margin="30px 5px"
+                height="200px"
               >
                 <img
                   src={`https://developer.accuweather.com/sites/default/files/${
@@ -39,10 +40,10 @@ function Forecast({ current }: {current: Current}) {
                   }-s.png`}
                   alt={dailyForcast.Day.IconPhrase}
                 />
-                <Text size="2em" margin="15px 0">
+                <Text size="2rem" margin="15px 0">
                   {date.isDay(dailyForcast.Date)}
                 </Text>
-                <Text weight="500" size="1.2em">
+                <Text weight="500" size="1.2rem">
                   {dailyForcast.Day.IconPhrase}
                 </Text>
                 <Text weight="500">

@@ -8,6 +8,7 @@ import { useHistory } from 'react-router-dom';
 
 import { Fav } from '../../interfaces/Fav';
 import { State } from '../../interfaces/State';
+import { Title } from '../common/text/Title';
 
 const Favorites = () => {
   const { favorites } = useSelector((state: State) => state);
@@ -39,19 +40,19 @@ const Favorites = () => {
           dir="column"
           justify="space-evenly"
           alignItems="center"
-          width="250px"
+          width="20%"
           height="300px"
           radius="8px"
-          margin="10px"
+          margin="30px 5px"
           border="1px solid var(--themeColor)"
           padding=" 25px"
           cursor='pointer'
           onClick={() => handleClick(favorite)}
         >
-          <Text size="2em" margin="15px 0" weight="600">
+          <Title level="2" margin="15px 0">
             {favorite.locationName}
-          </Text>
-          <Text weight="500" size="1.2em" margin="0">
+          </Title>
+          <Text weight="500" size="1.2rem" margin="0">
             {favorite.weather.Temperature.Metric.Value}
             {favorite.weather.Temperature.Metric.Unit}
           </Text>
@@ -62,7 +63,7 @@ const Favorites = () => {
               }-s.png`}
             alt={favorite.weather.WeatherIcon!.toString()}
           />
-          <Text weight="500" size="1.2em" margin="0">
+          <Text weight="500" size="1.2rem" margin="0">
             {favorite.weather.WeatherText!}
           </Text>
         </Col>
@@ -94,7 +95,7 @@ const Favorites = () => {
       border="1px solid var(--themeColor)"
       padding=" 25px"
     >
-      <Text size="2em" margin="15px 0" color="black" weight="600">
+      <Text size="2rem" margin="15px 0" color="black" weight="600">
         No favourites selected
       </Text>
     </Col>

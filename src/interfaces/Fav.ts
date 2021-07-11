@@ -3,8 +3,8 @@ import { Location } from "./Location";
 import { Weather } from "./Weather";
 
 export interface Fav {
-	id: any;
-	locationName: any;
+	id: string;
+	locationName: string;
 	location: Location;
     weather: Weather;
     forecast: Forcast[];

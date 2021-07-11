@@ -1,6 +1,6 @@
 export interface Location {
-	Key?: string;
-	LocalizedName?: any;
+	Key: string;
+	LocalizedName: string;
 	Version?: number;
 	AdministrativeArea?: {
 		ID: string;

@@ -1,5 +1,4 @@
-import { Current } from "./Current";
-import { Fav } from "./Fav";
+
 import { Location } from "./Location";
 import { Temperature } from "./Temperature";
 
@@ -9,7 +8,7 @@ export interface Weather {
 	WeatherText: string;
 	Temperature: Temperature;
 	error: string | null;
-	current: Current;
+	// current: Current;
 	loading?: boolean;
 	places: Location[];
 	IsDayTime: string;

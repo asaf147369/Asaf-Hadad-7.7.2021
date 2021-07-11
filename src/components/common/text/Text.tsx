@@ -8,6 +8,7 @@ const SText = styled.p<Props>`
   padding: ${(p) => (p.padding ? p.padding : '0')};
   text-align: ${(p) => p.textAlign};
   border: ${(p) => p.border};
+  cursor: ${(p) => p.cursor};
 `;
 
 export const Text = (props:Props) => {
@@ -24,7 +25,9 @@ interface Props {
   weight?: string;
   margin?: string;
   padding?: string;
-  children: string | string[];
+  children: string | string[] | null;
   textAlign?: string;
   border?: string;
+  onClick?: any;
+  cursor?: string;
 }

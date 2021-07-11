@@ -9,6 +9,6 @@ export const Title = (props:Props) => {
 
 interface Props {
 	level: string;
-	children: string | string[] | JSX.Element | JSX.Element[];
+	children: string | string[] | JSX.Element | JSX.Element[] | undefined;
 	margin?: string;
 }

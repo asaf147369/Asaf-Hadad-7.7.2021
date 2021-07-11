@@ -15,7 +15,7 @@ const Search = ({ theme }:{theme:any}) => {
       options={places || []}
       getOptionLabel={(option:Location) => option.LocalizedName}
       getOptionSelected={(option, value) => option.Version === value.Version}
-      onChange={(event:any, place) => place && handleSelected(place)}
+      onChange={(event, place) => place && handleSelected(place)}
       style={{
         maxWidth: 500,
         margin: '10px auto',

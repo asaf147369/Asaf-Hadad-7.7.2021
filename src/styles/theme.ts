@@ -3,7 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 export const lightTheme = {
   body: '#fff',
   fontColor: '#121212',
-  inputColor: '#ccc',
+  inputColor: 'transparent',
   themeColor: '#004550',
   switchColor: '#f50057'
 };
@@ -11,13 +11,19 @@ export const lightTheme = {
 export const darkTheme = {
   body: '#121212',
   fontColor: '#fff',
-  inputColor: '#ccc',
+  inputColor: '#fff',
   themeColor: '#BB86FC',
   switchColor: '#f50057'
 };
 
 
 export const GlobalStyles = createGlobalStyle`
+  html{
+    font-size: 16px;
+    @media (max-width: 768px) {
+      font-size: 13px;
+    }
+  }
   body {
     background: ${(props:Theme) => props.theme.body};
     color: ${( props:Theme) => props.theme.fontColor};
@@ -30,6 +36,9 @@ export const GlobalStyles = createGlobalStyle`
   }
   input::placeholder {
     color: ${( props:Theme) => props.theme.inputColor};
+  }
+  label {
+    background: white;
   }
   `
 

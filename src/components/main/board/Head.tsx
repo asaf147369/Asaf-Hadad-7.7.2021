@@ -46,7 +46,7 @@ const Head = ({ current, favorites } : {current:Current, favorites?: Fav[]}) => 
           <IconButton onClick={handleClick}>
             <BsHeartFill color={existInFavorite ? '#ff0005' : '#ccc'} style={{ cursor: 'pointer' }} />
           </IconButton>
-          <Text border="1px solid var(--themeColor)" padding="0 5px 3px">
+          <Text border="1px solid var(--themeColor)" padding="0 5px 3px" cursor="pointer" onClick={handleClick}>
             Add to favorites
           </Text>
         </Col>

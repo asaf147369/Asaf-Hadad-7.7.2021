@@ -137,7 +137,6 @@ function createFakeWeather(weather?: Partial<Weather>): Weather {
 		WeatherText: weather?.WeatherText || chance.word(),
 		Temperature: weather?.Temperature || createFakeTemperature(),
 		error: weather?.error || chance.word(),
-		current: weather?.current || createFakeCurrent(),
 		places: weather?.places || [createFakeLocation()],
 		IsDayTime: weather?.IsDayTime || chance.word(),
 	}
